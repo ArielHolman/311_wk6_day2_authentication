@@ -24,7 +24,7 @@ Finally, in MySQL Workbench, run the `initialize.sql` script that is included in
 
 Note: This is a tough project, but hang in there and try to understand as much as possible. Auth0 is a popular framework for authentication. A lot of the setup is done for us.
 
-The routes/controllers, SQL statements and basic setup has been done for us. Our job is now to complete the functions in the middleware folder and then use them in our routes. 
+The routes/controllers, SQL statements and basic setup has been done for us. Our job is now to complete the functions in the middleware folder and then use them in our routes.
 
 Keep in mind that your port (4001) may be different.
 
@@ -93,7 +93,7 @@ Execute the request and notice that you are allowed to add users again and see a
 
 Ok so we now have protected routes and some users can access them if they have the appropriate token but where do they get that token from? We need to create a workflow that sends back a token when a user logs in. We need to do that by calling an Auth0 endpoint during the login endpoint.
 
-Find the "login" function in `controllers/auth.js`. You'll see that the call the the Auth0 endpoint is mostly complete but we still need to do a few things. 
+Find the "login" function in `controllers/auth.js`. You'll see that the call the the Auth0 endpoint is mostly complete but we still need to do a few things.
 
 1. Set the default directory on your Auth0 account to "Username-Password-Authentication". You can do this by clicking on your profile icon in the top right corner of your dashboard and selecting "Settings". On the settings page scroll down to "API Authorization Settings" -> "Default Directory".
 
